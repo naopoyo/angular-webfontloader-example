@@ -1,6 +1,6 @@
 # Angular Universal なアプリケーションで webfontloader を使うためのサンプル
 
-次のようにコマンドを実行していけば、開発用サーバーが起動されます。
+次のようにコマンドを実行していけば、開発用サーバーが起動します。
 
 ```
 $ git clone https://github.com/naopoyo/angular-webfontloader-example.git
