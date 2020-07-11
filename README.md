@@ -10,3 +10,7 @@ $ npm run dev:ssr
 ```
 
 http://localhost:4200 にアクセスして動いてるか見てみましょう。
+
+## 参考
+
+このサンプルの詳細は [Qiitaの記事](https://qiita.com/naopoyo/items/224a911c45ec729dbd1d) を読んでみてください。
