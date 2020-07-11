@@ -6,7 +6,7 @@ import { AppInitService, AppInitFactory } from './app-init.service'
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' })],
   providers: [
     {
       provide: APP_INITIALIZER,
