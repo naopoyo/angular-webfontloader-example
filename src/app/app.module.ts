@@ -1,16 +1,20 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule, APP_INITIALIZER } from '@angular/core'
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
+import { AppInitService, AppInitFactory } from './app-init.service'
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: AppInitFactory,
+      multi: true,
+      deps: [AppInitService],
+    },
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
